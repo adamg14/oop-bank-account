@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 abstract class BankAccount{
     // constructor, deposit, withdraw, check balance, calculate interest (savings), transfer funds, close account, loan request, change password , view transaction history, 
     private String accountHolderName;
     private double accountBalance;
     private int accountNumber; 
     private int pin;
+    private ArrayList<String> transactions = new ArrayList<String>();
 
     // constructor function
     public BankAccount(String _accountHolderName, int _accountNumber, int _pin){
@@ -25,9 +27,11 @@ abstract class BankAccount{
     }
 
     public void transferFunds(int accountNumber, double amount){
-        
+
     };
 
+    // function that validates the user's pin
+    public 
     // getter function
     public Int getAccountNumber(){
         return this.accountNumber;
